@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ali_j.voc.MainActivity">
+
+
+
+    <EditText
+        android:id="@+id/aze"
+        android:layout_width="281dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Aze"
+        android:inputType="textPersonName"
+
+    app:layout_constraintTop_toTopOf="parent"
+        android:layout_above="@+id/eng"
+        android:layout_alignLeft="@+id/eng"
+        android:layout_alignStart="@+id/eng"
+        android:layout_marginBottom="39dp" />
+
+
+    <EditText
+        android:id="@+id/eng"
+        android:layout_width="281dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Eng"
+        android:inputType="textPersonName"
+
+
+        tools:layout_editor_absoluteY="132dp"
+        tools:layout_editor_absoluteX="-5dp"
+        android:layout_marginBottom="42dp"
+        android:layout_above="@+id/Save"
+        android:layout_alignLeft="@+id/Save"
+        android:layout_alignStart="@+id/Save" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="276dp"
+        android:layout_height="48dp"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="207dp"
+        android:onClick="InsertNewWord"/>
+
+
+
+</RelativeLayout>
